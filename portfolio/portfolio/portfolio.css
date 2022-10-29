@@ -1,0 +1,17 @@
+.body {
+    background-color: cadetblue; height: 100%;
+}
+.navtop {
+    padding: ;
+    font-size: xx-large;
+}
+.active {
+    padding-left: 400px;
+}
+h1 {
+    text-align: center;
+}
+.p {
+    font-size: 100px;
+    text-align: center;
+}

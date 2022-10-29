@@ -1,0 +1,10 @@
+.center {
+    text-align: center;
+}
+.middle {
+    padding: 200px;
+    padding-left: 500px;
+}
+body {
+    background-color: cadetblue;
+}

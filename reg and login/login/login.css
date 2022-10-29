@@ -1,0 +1,13 @@
+h1 {
+    text-align: center;
+}
+.form {
+    padding-left: 500px;
+}
+.submit {
+    padding-left: 630px;
+}
+body {
+    background-color: cadetblue;
+    padding-top: 200px;
+}

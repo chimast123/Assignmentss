@@ -1,0 +1,9 @@
+.success {
+    text-align: center;
+    font-size: large;
+    font-family: sans-serif;
+    text-size: 500px;
+    padding: 400px;
+}
+body {
+    background-color: cadetblue
