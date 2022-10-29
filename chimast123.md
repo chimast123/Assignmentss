@@ -32,7 +32,7 @@ I'm a full stack developer...
 ⚡️ Fun fact...
 
 
-# Hi, I'm Katherine! 👋
+# Hi, I'm Chima! 👋
 Hi, I'm Chima Njoku
 
 
