@@ -1,0 +1,118 @@
+:root {
+    --bright-orange: hsl(31, 77%, 52%);
+    --dark-cyan: hsl(184, 100%, 22%);
+    --very-dark-cyan: hsl(179, 100%, 13%);
+    --transparent-white: hsla(0, 0%, 100%, 0.75);
+    --very-light-gray: hsl(0, 0%, 95%);
+}
+
+/* Boilerplate styles */
+html {
+    font-size: 100%;
+    box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+body {
+    background: var(--very-light-gray);
+    margin: 0;
+    font-family: "Lexend Deca", sans-serif;
+    font-size: 0.9375rem; /* 15px */
+}
+
+/* Main styles */
+main {
+    min-height: 100vh;
+    margin: 70px 25px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-areas: 'A B' 'A C';
+}
+.sedans {
+    background: var(--bright-orange);
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    grid-area: A;
+}
+.suvs {
+    background: var(--dark-cyan);
+    grid-area: B;
+}
+.luxury {
+    background: var(--very-dark-cyan);
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    grid: C;
+}
+article {
+    max-width: 600px;
+    padding: 48px 40px;
+}
+article h1,
+article h2 {
+    color: var(--very-light-gray);
+    font-family: "Big Shoulders Display", cursive;
+    text-transform: uppercase;
+    font-size: 2.375rem; /* 38px */
+}
+article p {
+    margin: 18px 0 30px;
+    color: var(--transparent-white);
+    line-height: 1.6;
+}
+article button {
+    background: var(--very-light-gray);
+    padding: 11px 22px 10px;
+    border: 2px solid var(--very-light-gray);
+    border-radius: 25px;
+    transition: background-color 150ms, color 150ms;
+    font-family: "Lexend Deca", sans-serif;
+}
+article button:hover {
+    color: var(--very-light-gray);
+    background: transparent;
+    cursor: pointer;
+}
+.sedans button {
+    color: var(--bright-orange);
+}
+.suvs button {
+    color: var(--dark-cyan);
+}
+.luxury button {
+    color: var(--very-dark-cyan);
+}
+
+/* Desktop styles */
+@media all and (min-width: 960px) {
+    main {
+        margin: 0;
+        grid-template-columns: repeat(3, 300px);
+    }
+    .sedans {
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 8px;
+    }
+    .luxury {
+        border-bottom-left-radius: 0;
+        border-top-right-radius: 8px;
+    }
+    article {
+        padding: 50px 45px 55px;
+    }
+    article h1,
+    article h2 {
+        margin: 30px 0;
+    }
+    article p {
+        margin: 20px 0 80px;
+    }
+    article button {
+        padding: 12px 28px 11px;
+        font-size: 1rem; /* 16px */
+    }
+}
